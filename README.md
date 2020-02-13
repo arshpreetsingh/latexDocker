@@ -2,10 +2,16 @@
 
 Full texlive distribution
 
+## Build Docker Image for Local with Tag
+
+```sh
+$ docker build -t latex_docker . 
+```
+
 ## Usage
 
 ```sh
-$ docker run --rm -it -v $(pwd):/source schickling/latex
+$ docker run --rm -it -v $(pwd):/source latex_docker
 ```
 
 Mount your local source folder to the container and run it inside the container.
